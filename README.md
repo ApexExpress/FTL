@@ -2,7 +2,10 @@
 First Token Language | Bug Bounty Gist
 
 (FTL)
-First Token Language Was inspired by Perl, Regex & many other languages. A Token Based Machine Learning Language System.
+
+## First Token Language 
+
+Was inspired by Perl, Regex & many other languages. A Token Based Machine Learning Language System.
 
 ```
 1. !/  = declare.strings
@@ -16,7 +19,10 @@ First Token Language Was inspired by Perl, Regex & many other languages. A Token
 9. (/  = opening.paren
 0. )/  = closed.paren
 ```
-## Verification "Block Stepping"
+##  "Block Stepping" Verification Process
+
+A pattern can be seen throughout the matrix block.
+
 ```
 !!/ declare.strings.verification
 @@/ id.command.verification
@@ -29,8 +35,11 @@ $$/ value.key.verification
 ((/ opening.paren.verification
 ))/ closed.paren.verification
 ```
+## FTL Matrix Block
+This is the keyblock matrix used for the laguage.
+
 ```
-'! @ # $ % ^ & * ( !)'
+         '! @ # $ % ^ & * ( !)'
 '!! !@ !# !$ !% !^ !& !* !( @)'
 '@! @@ @# @$ @% @^ @& @* @( #)'
 '#! #@ ## #$ #% #^ #& #* #( $)'
