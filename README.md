@@ -1,5 +1,5 @@
 # FTL
-First Token Language | Bug Bounty Gist
+First Token Language | Created and maintained by CJ (@apexexpress)
 
 (FTL)
 
@@ -22,6 +22,10 @@ Was inspired by Perl, Regex & many other languages. A Token Based Machine Learni
 ##  "Block Stepping" Verification Process
 
 A pattern can be seen throughout the matrix block.
+Stepping down the FTL matrix block you can see the verification highlighted.
+Each row is different and unique.
+each token has value and meaning.
+Token generation is a sequencial pattern.
 
 ```
 !!/ declare.strings.verification
@@ -36,7 +40,8 @@ $$/ value.key.verification
 ))/ closed.paren.verification
 ```
 ## FTL Matrix Block
-This is the keyblock matrix used for the laguage.
+This is the keyblock matrix used for the language.
+Each end row tells about what is comming next.
 
 ```
          '! @ # $ % ^ & * ( !)'
