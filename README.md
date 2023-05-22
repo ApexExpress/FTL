@@ -2,7 +2,8 @@
 First Token Language | Bug Bounty Gist
 
 (FTL)
-First Token Language Was inspired by Perl, Regex & many other languages. A Token Based System.
+First Token Language Was inspired by Perl, Regex & many other languages. A Token Based Machine Learning Language System.
+
 ```
 1. !/  = declare.strings
 2. @/  = id.command
@@ -14,6 +15,19 @@ First Token Language Was inspired by Perl, Regex & many other languages. A Token
 8. */  = permissions.env
 9. (/  = opening.paren
 0. )/  = closed.paren
+```
+## Verification "Block Stepping"
+```
+!!/ declare.strings.verification
+@@/ id.command.verification
+##/ display.comment.verification
+$$/ value.key.verification
+%%/ split.objective.verification
+^^/ peek.display.verification
+&&/ runtime.ext.verification
+**/ permissions.env.verification
+((/ opening.paren.verification
+))/ closed.paren.verification
 ```
 ```
 '! @ # $ % ^ & * ( !)'
