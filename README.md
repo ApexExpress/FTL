@@ -6,6 +6,7 @@ First Token Language | Created and maintained by CJ (@apexexpress)
 ## First Token Language 
 
 Was inspired by Perl, Regex & many other languages. A Token Based Machine Learning Language System.
+https://en.wikipedia.org/wiki/Symbolic_link
 
 ```
 1. !/  = declare.strings
