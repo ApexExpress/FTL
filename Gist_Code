@@ -1,0 +1,29 @@
+1. !/  = declare.strings
+!/hello
+
+2. @/  = id.command
+@/FOOO
+
+3. #/  = display.comment
+#/Generally
+
+4. $/  = value.key
+$/32
+
+5. %/  = split.objective
+%/TABLE_DATA
+
+6. ^/  = peek.display
+^/OPEN()
+
+7. &/  = runtime.ext
+&/node.js
+
+8. */  = permissions.env
+*/AUTH.com/service-tool
+
+9. (/  = opening.paren
+(/STATEMENT
+
+0. )/  = closed.paren
+)/WATCH()
