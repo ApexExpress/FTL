@@ -42,7 +42,9 @@ $$/ value.key.verification
 ```
 ## FTL Matrix Block
 This is the keyblock matrix used for the language.
-Each end row tells about what is comming next.
+Each end row tells about what is comming NeXt.
+
+Steve Jobs shows the power of the NeXT Computer (1988) reference materials
 
 ```
          '! @ # $ % ^ & * ( !)'
