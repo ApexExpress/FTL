@@ -84,13 +84,6 @@ example:
 '(' '(!' '(@' '(#' '($' '(%' '(^' '(&' '(*' '((' '!))'
 ')' '!)!' '!)@' '!)#' '!)$' '!)%' '!)^' '!)&' '!)*' '!)(' '@))'
 ```
-
- Custom created token operators use for expression new constructs and concepts
- features and ideas inside the machine a different view with their own defs.
-         
- I wanted to make sure this was not the problem we all face so finding a remedy
- is what the ultimate goal is about connecting the dots forwards simply takes 
- more DATA the right instruction.
                  
 ```
          '! @ # $ % ^ & * ( !)'  # Sequencial Token
