@@ -71,7 +71,8 @@ example:
    DATA: generalized and basic
    
    Inside Encrpytion Protocol (( FTL ))
-         
+
+```         
 '!' '!!' '!@' '!#' '!$' '!%' '!^' '!&' '!*' '!(' '@)'
 '@' '@!' '@@' '@#' '@$' '@%' '@^' '@&' '@*' '@(' '#)'
 '#' '#!' '#@' '##' '#$' '#%' '#^' '#&' '#*' '#(' '$)'
@@ -82,7 +83,8 @@ example:
 '*' '*!' '*@' '*#' '*$' '*%' '*^' '*&' '**' '*(' '()'
 '(' '(!' '(@' '(#' '($' '(%' '(^' '(&' '(*' '((' '!))'
 ')' '!)!' '!)@' '!)#' '!)$' '!)%' '!)^' '!)&' '!)*' '!)(' '@))'
-         
+```
+
  Custom created token operators use for expression new constructs and concepts
  features and ideas inside the machine a different view with their own defs.
          
