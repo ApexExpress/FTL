@@ -48,9 +48,9 @@ take it with you if that is what you choose to do.
 
 ## Project Support Update
 
-Checkpoint |:::|::| *unless* + ( NOTED ) IF AND/OR
+Checkpoint ```|:::|::|``` *unless* + ( NOTED ) IF AND/OR
 
-csee | ... | because
+csee ```| ... |``` because
 
 The first row details the starting sequence
 
@@ -83,12 +83,12 @@ example:
 '( = $9 units (! (@ (# ($ (% (^ (& (* (( !))'
 ') = $0 units !)! !)@ !)# !)$ !)% !)^ !)& !)* !)( @))'
          
-         Custom created token operators use for expression new constructs and concepts
-         features and ideas inside the machine a different view with their own defs.
+ Custom created token operators use for expression new constructs and concepts
+ features and ideas inside the machine a different view with their own defs.
          
-         I wanted to make sure this was not the problem we all face so finding a remedy
-         is what the ultimate goal is about connecting the dots forwards simply takes 
-         more DATA the right instruction.
+ I wanted to make sure this was not the problem we all face so finding a remedy
+ is what the ultimate goal is about connecting the dots forwards simply takes 
+ more DATA the right instruction.
                  
 ```
          '! @ # $ % ^ & * ( !)'  # Sequencial Token
