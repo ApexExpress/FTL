@@ -56,3 +56,13 @@ $$/ value.key.verification
 '(! (@ (# ($ (% (^ (& (* (( !))' # Open Parameters Finalize
 
 ```
+ 
+'!! !@ !# !$ !% !^ !& !* !( @)'  # Statement Keypair Sequencial
+'@! @@ @# @$ @% @^ @& @* @( #)'  # Id Keypair Status
+'#! #@ ## #$ #% #^ #& #* #( $)'  # Comment Ctrl Objective
+'$! $@ $# $$ $% $^ $& $* $( %)'  # Value Keyword Keypair Authorization
+'%! %@ %# %$ %% %^ %& %* %( ^)'  # Split Table DATA
+'^! ^@ ^# ^$ ^% ^^ ^& ^* ^( &)'  # Peek Serial
+'&! &@ &# &$ &% &^ && &* &( *)'  # Runtime Routine
+'*! *@ *# *$ *% *^ *& ** *( ()'  # Permission Accessor
+'(! (@ (# ($ (% (^ (& (* (( !))' # Open Parameters Finalize
