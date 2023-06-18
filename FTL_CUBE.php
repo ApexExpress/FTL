@@ -1,3 +1,7 @@
+<?php
+
+echo "Hello, World!";
+
 import FTL -> system;
 use english;
 use FTL::Cube;
@@ -19,3 +23,5 @@ return 1;
 
 END
 EOM EOF EOT
+
+?>
