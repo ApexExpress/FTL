@@ -1,44 +1,34 @@
 # FTL
 First Token Language | Created and maintained by CJ (@apexexpress)
 
+This part indicates symbolic routes
 ```
-1. !/  = declare.strings
-2. @/  = id.command
-3. #/  = display.comment
-4. $/  = value.key
-5. %/  = split.objective
-6. ^/  = peek.display
-7. &/  = runtime.ext
-8. */  = permissions.env
-9. (/  = opening.paren
-0. )/  = closed.paren
+1. !/1  = 'declare.strings'
+2. @/2  = 'id.command'
+3. #/3  = 'display.comment'
+4. $/4  = 'value.key'
+5. %/5  = 'split.objective'
+6. ^/6  = 'peek.display'
+7. &/7  = 'runtime.ext'
+8. */8  = 'permissions.env'
+9. (/9  = 'opening.paren'
+0. )/0  = 'closed.paren'
 ```
-```
-!!/ declare.strings.verification
-@@/ id.command.verification
-##/ display.comment.verification
-$$/ value.key.verification
-%%/ split.objective.verification
-^^/ peek.display.verification
-&&/ runtime.ext.verification
-**/ permissions.env.verification
-((/ opening.paren.verification
-))/ closed.paren.verification
-```
+This part authentication doubles AUTH()
 
-```         
-'!' '!!' '!@' '!#' '!$' '!%' '!^' '!&' '!*' '!(' '@)'
-'@' '@!' '@@' '@#' '@$' '@%' '@^' '@&' '@*' '@(' '#)'
-'#' '#!' '#@' '##' '#$' '#%' '#^' '#&' '#*' '#(' '$)'
-'$' '$!' '$@' '$#' '$$' '$%' '$^' '$&' '$*' '$(' '%)'
-'%' '%!' '%@' '%#' '%$' '%%' '%^' '%&' '%*' '%(' '^)'
-'^' '^!' '^@' '^#' '^$' '^%' '^^' '^&' '^*' '^(' '&)'
-'&' '&!' '&@' '&#' '&$' '&%' '&^' '&&' '&*' '&(' '*)'
-'*' '*!' '*@' '*#' '*$' '*%' '*^' '*&' '**' '*(' '()'
-'(' '(!' '(@' '(#' '($' '(%' '(^' '(&' '(*' '((' '!))'
-')' '!)!' '!)@' '!)#' '!)$' '!)%' '!)^' '!)&' '!)*' '!)(' '@))'
 ```
-                 
+!!/11  -> # declare.strings.verification
+@@/22  -> # id.command.verification
+##/33  -> # display.comment.verification
+$$/44  -> # value.key.verification
+%%/55  -> # split.objective.verification
+^^/66  -> # peek.display.verification
+&&/77  -> # runtime.ext.verification
+**/88  -> # permissions.env.verification
+((/99  -> # opening.paren.verification
+))/00  -> # closed.paren.verification
+```
+                 This one breakdown each row
 ```
          '! @ # $ % ^ & * ( !)'  # Sequencial Token
  
@@ -55,6 +45,8 @@ $$/ value.key.verification
 '*! *@ *# *$ *% *^ *& ** *( ()'  # Permission Accessor
 '(! (@ (# ($ (% (^ (& (* (( !))' # Open Parameters Finalize
 ```
+
+The FTL cypher block 
 ```
 '!! !@ !# !$ !% !^ !& !* !( @)'  # Statement Keypair Sequencial
 '@! @@ @# @$ @% @^ @& @* @( #)'  # Id Keypair Status
