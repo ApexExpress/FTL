@@ -1,0 +1,11 @@
+FILE DATA META VIEWPORT
+import service system;
+show( func fs ) for package.item -> 'libs/src'
+export PKG.action;         # -> package action item
+BEGIN: @COPY(cody)         # -> COPY user.name-ID
+export caller(DATA);       # -> SYSLINK -> SYS::MAP
+export Express::SSL;       # -> SSL::EXPRESS -> ssl-socket
+export syscall->syslink*;  # -> file extension premission indicator
+export accessor-premission # -> Display Indicator Panel
+export DATA[export FILE]   # -> exporter FILE with proper EXT
+export( FILE )
