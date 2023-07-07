@@ -1,29 +1,47 @@
 1. !/  = declare.strings
 !/hello
+        EXAMPLE: $declare.strings
+        print: "hello"
 
 2. @/  = id.command
 @/FOOO
+    Example: $id.command
+    print: "FOOD"
 
 3. #/  = display.comment
 #/Generally
+    Example: $display.comment
+    print "Generally"
 
 4. $/  = value.key
 $/32
+    Example: $value.key
+    print "32"
 
 5. %/  = split.objective
 %/TABLE_DATA
+    Example: $split.objective
+    print "TABLE_DATA"
 
 6. ^/  = peek.display
 ^/OPEN()
+    Example: $peek.display
+    print "open( function )"
 
 7. &/  = runtime.ext
 &/node.js
-
+    Example: ERROR
+    print "ERROR"
+continue { ... }
 8. */  = permissions.env
 */AUTH.com/service-tool
-
+    Example: $permissions.env*
+    print "service-tool"
 9. (/  = opening.paren
-(/STATEMENT
-
+(/STATEMENT number item
+    Example: ERROR
+    print "opening.paren"
 0. )/  = closed.paren
 )/WATCH()
+    Example: $closed.paren
+    print "WATCH( function via dialer program )"
