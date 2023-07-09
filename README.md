@@ -59,6 +59,7 @@ The FTL cypher block
 '(! (@ (# ($ (% (^ (& (* (( !))' # Open Parameters Finalize
 ```
 
+```
 '!! !@ !# !$ !% !^ !& !* !( @)': Statement Keypair Sequential
 This sequence appears to represent a sequence of statement keypairs, where each keypair consists of a symbol followed by an at sign (@). The exclamation mark (!) indicates the beginning of a statement, and the at sign (@) separates the key and value of each keypair. The symbols after the at sign seem to represent different attributes or values associated with each key.
 
@@ -85,3 +86,55 @@ This sequence represents a permission accessor. The asterisk () symbol indicates
 
 '(! (@ (# ($ (% (^ (& (* (( !))': Open Parameters Finalize
 This sequence represents the opening and finalizing of parameters. The exclamation mark (!) at the beginning and end indicates the beginning and completion of the parameters. The symbols within parentheses () represent different parameter values or attributes. The symbols after the ampersand (&) may indicate some form of interaction or combination between the parameters.
+```
+```
+// Statement Keypair Sequential
+let statement_keypair_sequential = vec!["!", "@", "#", "$", "%", "^", "&", "*", "(", "@"];
+
+// Id Keypair Status
+let id_keypair_status = vec!["@!", "@@", "@#", "@$", "@%", "@^", "@&", "@*", "@(", "#"];
+
+// Comment Ctrl Objective
+let comment_ctrl_objective = vec!["#!", "#@", "##", "#$", "#%", "#^", "#&", "#*", "#(", "$"];
+
+// Value Keyword Keypair Authorization
+let value_keyword_keypair_authorization = vec![
+    "$!", "$@", "$#", "$$", "$%", "$^", "$&", "$*", "$(", "%"
+];
+
+// Split Table DATA
+let split_table_data = vec![
+    "%!", "%@", "%#", "%$", "%%", "%^", "%&", "%*", "%(", "^"
+];
+
+// Peek Serial
+let peek_serial = vec![
+    "^!", "^@", "^#", "^$", "^%", "^^", "^&", "^*", "^( &)"
+];
+
+// Runtime Routine
+let runtime_routine = vec![
+    "&!", "&@", "&#", "&$", "&%", "&^", "&&", "&*", "&(", "*)"
+];
+
+// Permission Accessor
+let permission_accessor = vec![
+    "*!", "*@", "*#", "*$", "*%", "*^", "*&", "**", "*(", "()"
+];
+
+// Open Parameters Finalize
+let open_parameters_finalize = vec![
+    "(!", "(@", "(#", "($", "(%", "(^", "(&", "(*", "(( !))"
+];
+
+// Print the sequences
+println!("{:?}", statement_keypair_sequential);
+println!("{:?}", id_keypair_status);
+println!("{:?}", comment_ctrl_objective);
+println!("{:?}", value_keyword_keypair_authorization);
+println!("{:?}", split_table_data);
+println!("{:?}", peek_serial);
+println!("{:?}", runtime_routine);
+println!("{:?}", permission_accessor);
+println!("{:?}", open_parameters_finalize);
+```
