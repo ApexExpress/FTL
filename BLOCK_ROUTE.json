@@ -1,0 +1,55 @@
+{
+  "route_name": "Block Route 1",
+  "blocks": [
+    {
+      "id": 1,
+      "type": "start",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": 2,
+      "type": "move",
+      "position": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "id": 3,
+      "type": "turn",
+      "angle": 90
+    },
+    {
+      "id": 4,
+      "type": "move",
+      "position": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "id": 5,
+      "type": "turn",
+      "angle": -45
+    },
+    {
+      "id": 6,
+      "type": "move",
+      "position": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "id": 7,
+      "type": "end",
+      "position": {
+        "x": 4,
+        "y": 4
+      }
+    }
+  ]
+}
