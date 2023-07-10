@@ -271,3 +271,114 @@ open_parameters_finalize = {
 ```
 
 I have rewritten the code as Python dictionaries, where each symbol represents a key and the associated value represents the meaning or attribute associated with that symbol.
+
+## Configure File
+
+```
+{
+  "statement_keypair_sequential": {
+    "!": "Statement",
+    "@": "Key",
+    "#": "Symbol",
+    "$": "Value",
+    "%": "Attribute",
+    "^": "Value",
+    "&": "Attribute",
+    "*": "Value",
+    "(": "At"
+  },
+  "id_keypair_status": {
+    "@": "Id",
+    "!": "Key",
+    "#": "Status",
+    "$": "Id",
+    "%": "Status",
+    "^": "Id",
+    "&": "Status",
+    "*": "Id",
+    "(": "Status"
+  },
+  "comment_ctrl_objective": {
+    "#": "Comment",
+    "!": "Control",
+    "@": "Objective",
+    "$": "Comment",
+    "%": "Control",
+    "^": "Objective",
+    "&": "Control",
+    "*": "Objective",
+    "(": "Control"
+  },
+  "value_keyword_keypair_authorization": {
+    "$": "Value",
+    "!": "Keyword",
+    "@": "Key",
+    "#": "Authorization",
+    "%": "Value",
+    "^": "Keyword",
+    "&": "Key",
+    "*": "Authorization",
+    "(": "Value",
+    ")": "Authorization"
+  },
+  "split_table_data": {
+    "%": "Split",
+    "!": "Table",
+    "@": "DATA",
+    "#": "Split",
+    "$": "Table",
+    "%": "DATA",
+    "^": "Split",
+    "&": "Table",
+    "*": "DATA"
+  },
+  "peek_serial": {
+    "^": "Peek",
+    "!": "Serial",
+    "@": "Peek",
+    "#": "Serial",
+    "$": "Peek",
+    "%": "Serial",
+    "&": "Peek",
+    "*": "Serial"
+  },
+  "runtime_routine": {
+    "&": "Runtime",
+    "!": "Routine",
+    "@": "Runtime",
+    "#": "Routine",
+    "$": "Runtime",
+    "%": "Routine",
+    "^": "Runtime",
+    "&": "Routine",
+    "*": "Runtime",
+    "(": "Routine",
+    ")": "Routine"
+  },
+  "permission_accessor": {
+    "*": "Permission",
+    "!": "Accessor",
+    "@": "Permission",
+    "#": "Accessor",
+    "$": "Permission",
+    "%": "Accessor",
+    "^": "Permission",
+    "&": "Accessor",
+    "*": "Permission",
+    "(": "Accessor",
+    ")": "Accessor"
+  },
+  "open_parameters_finalize": {
+    "(": "Open",
+    "!": "Parameters",
+    "@": "Finalize",
+    "#": "Open",
+    "$": "Parameters",
+    "%": "Finalize",
+    "^": "Open",
+    "&": "Parameters",
+    "*": "Finalize",
+    ")": "Open"
+  }
+}
+```
