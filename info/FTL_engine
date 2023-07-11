@@ -1,0 +1,123 @@
+import math
+
+def calculate_magnetic_field(magnetic_moment, position, observation_point):
+    # Constants
+    mu0 = 4 * math.pi * 10**-7  # Permeability of free space
+
+    # Calculate the distance between the dipole and the observation point
+    r = math.sqrt(sum([(pos - obs)**2 for pos, obs in zip(position, observation_point)]))
+
+    # Calculate the magnetic field strength
+    magnitude = (mu0 / (4 * math.pi)) * (3 * (magnetic_moment.dot(observation_point - position)) *
+                                        (observation_point - position) / r**5 - magnetic_moment / r**3)
+
+    return magnitude
+
+# Example usage
+if __name__ == '__main__':
+    # Magnetic moment of the dipole
+    magnetic_moment = np.array([0, 0, 1])  # Assuming a magnetic moment along the z-axis
+
+    # Position of the dipole
+    position = np.array([0, 0, 0])  # Assuming the dipole is located at the origin
+
+    # Observation point
+    observation_point = np.array([1, 0, 0])  # Observing the field at a point (1, 0, 0)
+
+    # Calculate the magnetic field at the observation point
+    magnetic_field = calculate_magnetic_field(magnetic_moment, position, observation_point)
+    print(f"Magnetic field at the observation point: {magnetic_field}")
+import RPi.GPIO as GPIO
+import time
+
+# Pin configuration
+coil_A_pin = 18
+coil_B_pin = 23
+enable_pin = 24
+
+# Coil states
+coil_A_energized = False
+coil_B_energized = False
+
+def setup():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(coil_A_pin, GPIO.OUT)
+    GPIO.setup(coil_B_pin, GPIO.OUT)
+    GPIO.setup(enable_pin, GPIO.OUT)
+    GPIO.output(enable_pin, GPIO.LOW)
+
+def energize_coil(coil_pin):
+    GPIO.output(coil_pin, GPIO.HIGH)
+
+def deenergize_coil(coil_pin):
+    GPIO.output(coil_pin, GPIO.LOW)
+
+def toggle_coil(coil_pin, coil_state):
+    if coil_state:
+        deenergize_coil(coil_pin)
+    else:
+        energize_coil(coil_pin)
+
+def generate_sparks(duration, frequency):
+    period = 1 / frequency
+    num_cycles = int(duration * frequency)
+
+    for _ in range(num_cycles):
+        toggle_coil(coil_A_pin, coil_A_energized)
+        toggle_coil(coil_B_pin, coil_B_energized)
+        coil_A_energized = not coil_A_energized
+        coil_B_energized = not coil_B_energized
+        time.sleep(period / 2)
+
+def cleanup():
+    GPIO.output(coil_A_pin, GPIO.LOW)
+    GPIO.output(coil_B_pin, GPIO.LOW)
+    GPIO.output(enable_pin, GPIO.LOW)
+    GPIO.cleanup()
+
+# Main program
+if __name__ == '__main__':
+    try:
+        setup()
+        generate_sparks(duration=5, frequency=10)  # Generate sparks for 5 seconds at 10 Hz
+        cleanup()
+    except KeyboardInterrupt:
+        cleanup()
+from qiskit import QuantumCircuit, execute, Aer
+
+# Define the sender's quantum circuit
+def sender_circuit(message):
+    circuit = QuantumCircuit(1, 1)
+    if message == '1':
+        circuit.x(0)  # Flip the qubit to '1' state
+    circuit.h(0)  # Apply a Hadamard gate
+    return circuit
+
+# Define the receiver's quantum circuit
+def receiver_circuit(received_qubit):
+    circuit = QuantumCircuit(1, 1)
+    circuit.h(0)  # Apply a Hadamard gate
+    circuit.measure(0, 0)  # Measure the qubit
+    return circuit
+
+# Simulate quantum communication
+def simulate_quantum_communication(message):
+    # Sender prepares the qubit
+    sender_circ = sender_circuit(message)
+
+    # Simulate quantum channel (noiseless)
+    backend = Aer.get_backend('qasm_simulator')
+    job = execute(sender_circ, backend, shots=1)
+    sent_qubit = job.result().get_statevector(sender_circ)
+
+    # Receiver receives and measures the qubit
+    receiver_circ = receiver_circuit(sent_qubit)
+    job = execute(receiver_circ, backend, shots=1)
+    received_bit = int(list(job.result().get_counts(receiver_circ).keys())[0])
+
+    return received_bit
+
+# Example usage
+message = '0'  # Set the message to be transmitted ('0' or '1')
+received_bit = simulate_quantum_communication(message)
+print("Received Bit:", received_bit)
