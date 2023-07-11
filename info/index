@@ -1,0 +1,151 @@
+{
+  "route_name": "Block Route 1",
+  "blocks": [
+    {
+      "id": 1,
+      "type": "start",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": 2,
+      "type": "move",
+      "position": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "id": 3,
+      "type": "turn",
+      "angle": 90
+    },
+    {
+      "id": 4,
+      "type": "move",
+      "position": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "id": 5,
+      "type": "turn",
+      "angle": -45
+    },
+    {
+      "id": 6,
+      "type": "move",
+      "position": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "id": 7,
+      "type": "end",
+      "position": {
+        "x": 4,
+        "y": 4
+      }
+    }
+  ]
+}
+<?php
+
+echo "Hello, First Token Language!";
+
+import FTL -> system;
+
+use english;
+use FTL::Cube;
+
+BEGIN: @COPY(FTL::Cube)
+
+!! !@ !# !$ !% !^ !& !* !( @)
+
+@! @@ @# @$ @% @^ @& @* @( #)
+#! #@ ## #$ #% #^ #& #* #( $)
+$! $@ $# $$ $% $^ $& $* $( %)
+%! %@ %# %$ %% %^ %& %* %( ^)
+^! ^@ ^# ^$ ^% ^^ ^& ^* ^( &)
+&! &@ &# &$ &% &^ && &* &( *)
+*! *@ *# *$ *% *^ *& ** *() ()
+
+  (!) (@) (#) ($) (%) (^) (&) (*) (( !))
+
+return 0;
+return 1;
+
+END
+EOM EOF EOT
+
+?>
+1. !/  = declare.strings
+!/hello
+        EXAMPLE: $declare.strings
+        print: "hello"
+
+2. @/  = id.command
+@/FOOO
+    Example: $id.command
+    print: "FOOD"
+
+3. #/  = display.comment
+#/Generally
+    Example: $display.comment
+    print "Generally"
+
+4. $/  = value.key
+$/32
+    Example: $value.key
+    print "32"
+
+5. %/  = split.objective
+%/TABLE_DATA
+    Example: $split.objective
+    print "TABLE_DATA"
+
+6. ^/  = peek.display
+^/OPEN()
+    Example: $peek.display
+    print "open( function )"
+
+7. &/  = runtime.ext
+&/node.js
+    Example: ERROR
+    print "ERROR"
+continue { ... }
+8. */  = permissions.env
+*/AUTH.com/service-tool
+    Example: $permissions.env*
+    print "service-tool"
+9. (/  = opening.paren
+(/STATEMENT number item
+    Example: ERROR
+    print "opening.paren"
+0. )/  = closed.paren
+)/WATCH()
+    Example: $closed.paren
+    print "WATCH( function via dialer program )"
+extern crate time;
+
+use std::time::{Duration, Instant};
+
+fn main() {
+    let start = Instant::now();
+    let iterations = 1_000_000;
+
+    // Perform the hash calculations
+    for _ in 0..iterations {
+        // Replace this with your actual hash function
+        let _hash_result = hash_function("data_to_hash");
+    }
+
+    let elapsed = start.elapsed();
+    let duration_secs = elapsed.as_secs() as f64 + elapsed.subsec_nanos() as f64 * 1e-9;
+    let hash_rate = (iterations as f64 / duration_secs) as u64;
+
+    println!("Hash rate: {} hashes/second",
