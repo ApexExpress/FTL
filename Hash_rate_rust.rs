@@ -4,7 +4,7 @@ use std::time::{Duration, Instant};
 
 fn main() {
     let start = Instant::now();
-    let iterations = 1_000_000;
+    let iterations = 1_000_000_000;
 
     // Perform the hash calculations
     for _ in 0..iterations {
