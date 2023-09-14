@@ -1,3 +1,5 @@
+used for blocking routes that no longer need referencing DATA.
+current routes only but can be configured differently.
 {
   "route_name": "Block Route 1",
   "blocks": [
