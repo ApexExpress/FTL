@@ -12,21 +12,10 @@ BEGIN: system from libs/src.ext*
 grab( func fx )
   
   source from *.ext 
-  
-I would say just by that statement that a spark generator has a purpose
-to be understood perspective and critisim should be taken into account.
 
 Generation of a spark 60 sparks a second or 60 sparks minute 60 minutes a spark?
 
 All the above would be allowable.
-
-## Networking TCP/UDP + DATA stream
-
-Person 2 Person DATA networking is an innovation/tool that has yet to be fully implemented.
-^
-What is needed is this, you can see how far in space yet you still dont clean your world.
-^
-The future is open join millions of developer inside the open source community!
 
 ## Menu Options
 
