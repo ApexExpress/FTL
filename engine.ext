@@ -1,0 +1,28 @@
+import system from source system()
+use strict;
+use warnings;
+
+qw('readonly')
+
+# source: DATA
+# meta: DATA
+# code: imports
+# status: online
+
+goto source system from system()
+
+# online: DATA
+# meta: console
+# system projection
+# filesystem
+
+if system not found goto @console find: system()
+
+# BEGIN read(fn) pkg::module.ext
+
+# SRC : src/system/path/configuration -> src\windows\command\control
+# CODE: code/file/path/view -> code\file\path\view
+# EXIT: exit/goto/exit/out -> exit\goto\exit\out
+
+return 0;
+return 1;
